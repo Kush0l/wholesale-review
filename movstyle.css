@@ -1,0 +1,274 @@
+*{
+ 
+    font-family: 'Oswald', sans-serif;
+      color: aquamarine;
+    
+     
+  }
+  a:link {
+    text-decoration: none; 
+   }
+/* menu1 */
+
+.mainlogo{
+    margin: 25px;
+    border: solid white;
+    border-radius: 5px;
+  }
+  
+  
+  .btn-primary{
+      margin-left: 5px;
+  }
+  
+  
+  header{
+      display: flex;
+      background-color: rgb(255, 170, 0);
+  }
+  
+  
+  .mainnav{
+      padding: 40px;
+  }
+  
+  
+  nav>a{
+      color:black;
+      padding: 15px;
+      font-weight: bold;
+  }
+
+
+  .mainnav>a:hover{
+    border-bottom: solid blue 2px;
+    border-top:solid blue 2px ;
+    
+    }
+  
+  a:hover{
+      color: aquamarine;
+  }
+  
+  
+  a{
+      text-decoration: none;
+  }
+  
+  
+  .mainnav .icon {
+      display: none;
+    }
+.signin{
+    background-color:#0d6efd;
+    border: #0d6efd 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+  @media screen and (max-width: 600px) {
+      .mainnav a{display: none;}
+      /* :not(:first-child)  */
+      .mainnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+  
+    @media screen and (max-width: 600px) {
+      .mainnav.responsive {position: relative;}
+      .mainnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .mainnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+  
+  
+  
+    .mainnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+
+/* moviedetails */
+
+.btn-primary{
+    margin-top: 20px;
+}
+
+    .mainmovie{
+        background-image: url('./assets/movie-background-2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: row;
+       
+    }
+
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .mainmovie{
+      flex-direction: column;
+    }
+  }
+.mainmovimg{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mainmov_img{
+    
+    margin:auto ;
+    transition: transform .2s;
+   
+   
+  }
+  
+  .mainmov_img:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    
+  }
+    .mainmovimg>img{
+        
+        border: solid aqua 5px;
+        border-radius: 5px;
+        
+    }
+    .movcontent{
+        margin: 10px;
+        background-color: #1111118d;
+        padding:50px
+    }
+
+    /* review form */
+    .collapse{
+        padding-bottom: 30px;
+    }
+
+    .form-label{
+        color: orange;
+    }
+
+
+    /* main 2 */
+    .main2>h1{
+        
+        margin-left: 50px;
+        color:#111
+
+       }
+    .main2{
+        padding-top: 30px;
+        background-color: #111;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 20px;
+      }
+
+
+    /*gred 1*/
+.cards {
+
+    max-width: 1100px;
+    margin: auto ;
+    padding: 20px;
+    display: grid;
+  
+    gap: 3rem;
+  }
+  
+  
+  .moviedetails{
+    color: yellow;
+  }
+  
+  
+  .card{
+    
+    margin:auto ;
+    transition: transform .2s;
+
+   
+  }
+  
+  .card:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    
+  }
+  
+  
+  .movimg{
+    border: solid #111;
+    border-radius: 10px;
+  }
+  
+  
+  @media (min-width: 400px) {
+    .cards { grid-template-columns: repeat(4, 1fr); 
+  
+     
+    }
+  }
+  
+  
+  .btn-toolbar{
+    margin: auto;
+    width: 60%;
+   
+    
+    padding: 10px;
+  }
+
+
+  /* Footer style */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  
+  /* footer Styles for larger screens */
+  @media only screen and (min-width: 600px) {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+    .footer-section {
+      flex: 1;
+    }
+  }
+  
+  h4.footh{
+    color: aqua;
+  }
+  
+  a.followlink{
+    color: #7fffd4;
+  }
+  
+  a.followlink:hover{
+    color:red;
+  }
+  
+  
